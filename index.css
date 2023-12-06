@@ -47,6 +47,7 @@
 }
 
 .ila-post-item:first-child .ila-post-thumbnail {
+    width: 100%;
     height: auto;
 }
 
@@ -111,4 +112,24 @@
 a {
     color: #000;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .ila-post-item .ila-post-thumbnail {
+        height: 130px;
+    }
+
+    .ila-post-item:first-child .ila-post-thumbnail {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ila-grid-first-large {
+        display: flex;
+        flex-direction: column;
+    }
+    .ila-post-item .ila-post-thumbnail {
+        height: auto;
+    }
 }
